@@ -1,5 +1,6 @@
 
-Memory Cat Card Game in JavaScript
+Memory Cat Card Game in JavaScript.
+
 This repository contains the code for a Memory Cat Card Game implemented in JavaScript. Players can flip cards to find matching pairs of cat images. The game tracks the number of moves, elapsed time, and provides a star rating based on the player's performance.
 
 How to Play
