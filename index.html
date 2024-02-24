@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Memory Cat Card Game in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  </head>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class ="heading">
+        Memory Cat Game
+      </h1>
+      <div id="timer">Time: 0s</div>
+      <div id="moves-counter">Moves: 0</div>
+      <div id="star-rating">
+        Star Rating: 3 
+        <span id="star-icon"><img src="images/star_sign.png" alt="Star review"></span>
+      </div>
+      <img id="restart-button" src="images/reset-icon.png" alt="Restart Game" onclick="restartGame()">
+    <div class="wrapper">
+      <ul class="cards">
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_6.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_5.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_6.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_5.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/Que_frontview.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="images/cat_4.png" alt="card-img">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+    <div id="popup-container" class="popup-container">
+      <div class="popup">
+          <h2>End of The Game!</h2>
+          <p>Moves: <span id="popup-moves">0</span></p>
+          <p>Time: <span id="popup-time">0s</span></p>
+          <p>Star Rating: <span id="popup-star-rating">3</span></p>
+          <button onclick="closePopup()">Close</button>
+      </div>
+  </div>
+  
+    <script src="script.js"></script>
+
+  </body>
+</html>
